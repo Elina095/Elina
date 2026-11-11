@@ -1,0 +1,20 @@
+class Fraction:
+
+  def __init__(self, numerator, denominator):
+    if denominator == 0:
+      raise ValueError("Знаменатель дроби не может быть равен нулю!")
+    self.numerator = numerator  # Числитель
+    self.denominator = denominator  # Знаменатель
+
+  # Магический метод для строкового представления объекта
+  def __str__(self):
+    return f"{self.numerator}/{self.denominator}"
+
+
+# --- Демонстрация работы ---
+f1 = Fraction(3, 4)
+f2 = Fraction(1, 2)
+
+print(f1)  
+print(f2)  
+

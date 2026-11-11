@@ -1,0 +1,29 @@
+class EmailNotification:
+
+  def send(self, message):
+    print(f"Email: {message}")
+
+
+class SMSNotification:
+
+  def send(self, message):
+    print(f"SMS: {message}")
+
+
+class PushNotification:
+
+  def send(self, message):
+    print(f"Push: {message}")
+
+
+def notify_all(channels, message):
+  for channel in channels:
+    channel.send(message)
+    # --- Пример использования ---
+notification_channels = [
+    EmailNotification(),
+    SMSNotification(),
+    PushNotification(),
+]
+
+notify_all(notification_channels, "Ваш заказ успешно оформлен!")

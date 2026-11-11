@@ -1,0 +1,29 @@
+class Animal:
+
+  def make_sound(self):
+    print("Животное издает звук")
+
+
+class Dog(Animal):
+
+  def make_sound(self):
+    print("Собака: Гав-гав!")
+
+
+class Cat(Animal):
+
+  def make_sound(self):
+    print("Кошка: Мяу!")
+
+
+class Cow(Animal):
+
+  def make_sound(self):
+    print("Корова: Му-у-у!")
+
+
+
+animals = [Dog(), Cat(), Cow()]
+
+for animal in animals:
+  animal.make_sound()

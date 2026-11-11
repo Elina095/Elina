@@ -1,0 +1,15 @@
+class Point:
+
+  def __init__(self, x, y):
+    self.x = x
+    self.y = y
+  def __str__(self):
+    return f"({self.x}, {self.y})"
+
+
+
+# Создаем объект точки с координатами x=3, y=5
+p1 = Point(3, 5)
+
+# Когда мы передаем объект в функцию print(), Python автоматически вызывает метод __str__
+print(p1) 

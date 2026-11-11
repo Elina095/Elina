@@ -1,0 +1,22 @@
+class Dog:
+
+  def move(self):
+    print("Собака бежит на четырёх лапах.")
+
+
+class Robot:
+
+  def move(self):
+    print("Робот едет на колёсах.")
+
+
+class Human:
+
+  def move(self):
+    print("Человек идёт на двух ногах.")
+
+
+entities = [Dog(), Robot(), Human()]
+for entity in entities:
+  entity.move()
+  

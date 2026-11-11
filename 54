@@ -1,0 +1,27 @@
+class Instrument:
+
+  def play(self):
+    pass
+
+
+class Guitar(Instrument):
+
+  def play(self):
+    print("Гитара: дзинь-дзинь")
+
+
+class Piano(Instrument):
+
+  def play(self):
+    print("Пианино: плинк-плинк")
+
+
+class Drum(Instrument):
+
+  def play(self):
+    print("Барабан: бум-бум")
+
+
+orchestra = [Guitar(), Piano(), Drum()]
+for instrument in orchestra:
+  instrument.play()
